@@ -1,0 +1,46 @@
+{
+  "name": "namespac",
+  "version": "1.0.0",
+  "description": "A javascript namespace library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Alfred M. Adjei",
+    "email": "oss.alfmo@gmail.com",
+    "url": "https://github.com/alfmoh"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://alfmo.mit-license.org/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfmoh/namespac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfmoh/namespac/issues"
+  },
+  "keywords": [
+    "typescript",
+    "typings",
+    "namespace",
+    "web",
+    "node"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.2",
+    "@types/sinon": "^7.0.13",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --require ts-node/register --watch --watch-extensions ts 'src/**/*.test.ts'"
+  }
+}
